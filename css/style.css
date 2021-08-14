@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(47,51,58);
+    color: cornflowerblue;
+}
+
+body :nth-child(even) {
+    color: #f0f;
+}
