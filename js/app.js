@@ -126,15 +126,14 @@ const boucle = document.querySelector("body :nth-child(3)");
 // ! il faut absolument déclaré une variable d'indentation en dehors de la boucle while !
 let compteurTourDeBoucles = 0; // ? <= ici
 
-let nombreTourDeBouclesVoulu = 10; // ? 
+let nombreTourDeBouclesVoulu = 10; // ? <= 
 
 while (compteurTourDeBoucles !== nombreTourDeBouclesVoulu) {
+    const div = document.querySelector('.boucle');
+    const p = document.createElement('p');
 
-    let container = document.querySelector(".boucle");
-    // let paragraphe = document.createElement('p');
-    let ajoutTexte = paragraphe.innerHTML = "<p>Boucle moi !</p>";
-
-    
+    p.innerHTML = "Boucle moi !";
+    div.append(p);
 
     compteurTourDeBoucles ++;
 }
