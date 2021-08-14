@@ -70,5 +70,31 @@ if (variable) {
 
 // body :nth-child() <= cible l'element enfant 1 de body
 
-const = 
+// const boucle = document.querySelector("body :nth-child(3)");
+
+// boucle.setAttribute()
+
+// console.log(boucle)
+
+const lien = document.querySelector('a');
+
+lien.setAttribute("href", "https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child");
+
+lien.setAttribute("target", "blank");
+
+let monAttribut =  lien.getAttribute("href");
+
+const link = "https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child";
+
+if (monAttribut === link) {
+    lien.setAttribute("href", "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in");
+}
+
+lien.classList.add("maclass");
+
+let monAttribut2 =  lien.getAttribute("href");
+
+console.log(lien);
+console.log(monAttribut);
+console.log(monAttribut2);
 
